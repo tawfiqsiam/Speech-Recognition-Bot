@@ -3,8 +3,8 @@ const dialogflow = require('dialogflow')
 
 
 // Configuration
-const projectId = 'newagent-vxvwah'
-const sessionId = '123456789'
+const projectId = 'bumpit-dgvo'
+const sessionId = '949015799889'
 
 async function detectAudioIntent(
   inputAudio,
