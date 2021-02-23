@@ -1,6 +1,6 @@
 const fs = require('fs')
 const { Readable } = require('stream')
-
+const uuid = require('uuid')
 const Discord = require('discord.js')
 const ytdl = require('ytdl-core')
 
