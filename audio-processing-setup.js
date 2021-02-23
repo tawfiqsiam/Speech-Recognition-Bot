@@ -5,7 +5,7 @@ const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path
 ffmpeg.setFfmpegPath(ffmpegPath)
 
 const pico = require('hotword')
-const hotword = fs.readFileSync('bumblebee.ppn')
+const BumbleBee = require('bumblebee-hotword-node');
 const wavdecoder = require('wav-decoder')
 const bumblebee = new BumbleBee({
 	// device: '/dev/...',
@@ -25,7 +25,7 @@ bumblebee.addHotword('hey_google');
 bumblebee.addHotword('hey_siri');
 bumblebee.addHotword('jarvis');
 bumblebee.addHotword('porcupine');
-bumblebee.addHotword('terminator');
+bumblebee.addHotword('bumblebee');
 
 // add new hotword
 // bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
