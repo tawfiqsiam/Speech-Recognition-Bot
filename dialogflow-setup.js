@@ -1,6 +1,6 @@
 const fs = require('fs')
 const dialogflow = require('dialogflow')
-const uuid = require('uuid');
+const uuid = require('uuid')
 
 // Configuration
 const projectId = 'bumpit-dgvo'
