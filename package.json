@@ -5,7 +5,7 @@
         "@ffmpeg-installer/ffmpeg": "^1.0.20",
         "dialogflow": "^1.2.0",
         "discord.js": "^12.2.0",
-        "uuid": "^8.3.0",
+        "uuid": "^8.3.2",
         "fluent-ffmpeg": "^2.1.2",
         "hotword": "^1.0.9",
         "libsodium-wrappers": "^0.7.6",
