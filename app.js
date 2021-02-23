@@ -61,4 +61,4 @@ client.on('message', async ctx => {
   }
 })
 
-client.login(config.token)
+client.login(process.env.BOT_TOKEN);
