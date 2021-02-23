@@ -7,6 +7,34 @@ ffmpeg.setFfmpegPath(ffmpegPath)
 const pico = require('hotword')
 const hotword = fs.readFileSync('bumblebee.ppn')
 const wavdecoder = require('wav-decoder')
+const bumblebee = new BumbleBee({
+	// device: '/dev/...',
+	// program: 'rec',
+	// paths: {
+	// 	rec: '/usr/local/bin/rec'
+	// }
+});
+bumblebee.setSensitivity(0.5);
+
+bumblebee.addHotword('alexa');
+bumblebee.addHotword('computer');
+bumblebee.addHotword('bumblebee');
+bumblebee.addHotword('grasshopper');
+bumblebee.addHotword('hey_edison');
+bumblebee.addHotword('hey_google');
+bumblebee.addHotword('hey_siri');
+bumblebee.addHotword('jarvis');
+bumblebee.addHotword('porcupine');
+bumblebee.addHotword('terminator');
+
+// add new hotword
+// bumblebee.addHotword('white_smoke', require('./white_smoke.js'));
+
+bumblebee.on('hotword', function (hotword) {
+	console.log('');
+	console.log('Hotword Detected:', hotword);
+	playSound();
+});
 
 const { detectAudioIntent } = require('./dialogflow-setup')
 
