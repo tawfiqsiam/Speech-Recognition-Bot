@@ -1,10 +1,10 @@
 const fs = require('fs')
 const dialogflow = require('dialogflow')
-
+const uuid = require('uuid');
 
 // Configuration
 const projectId = 'bumpit-dgvo'
-const sessionId = '110684607166208159124'
+const sessionId = uuid.v4();
 
 async function detectAudioIntent(
   inputAudio,
