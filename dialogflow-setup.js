@@ -4,7 +4,7 @@ const uuid = require('uuid');
 
 // Configuration
 const projectId = 'bumpit-dgvo'
-const sessionId = uuid.v4();
+const sessionId = uuid.v4()
 
 async function detectAudioIntent(
   inputAudio,
