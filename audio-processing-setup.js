@@ -5,7 +5,7 @@ const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path
 ffmpeg.setFfmpegPath(ffmpegPath)
 
 const pico = require('hotword')
-const hotword = readFileSync('bumblebee.ppn')
+const hotword = ('bumblebee')
 const wavdecoder = require('wav-decoder')
 
 const { detectAudioIntent } = require('./dialogflow-setup')
